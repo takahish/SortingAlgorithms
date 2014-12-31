@@ -14,6 +14,7 @@
 #include "insertion_sort.h"
 #include "selection_sort.h"
 #include "heap_sort.h"
+#include "counting_sort.h"
 
 #define MAXLINE 1000 /* maximum input line size */
 #define MAXLINES 5000 /* max #lines to bo sorted */
@@ -30,9 +31,10 @@ int main(int argc, const char * argv[])
     int nlines; /* number of input lines read */
 
     if ((nlines = readlines(lineptr, MAXLINES)) >= 0) {
-        //insertion_sort((void *)lineptr, nlines, (int (*)(const void *, const void *))string_comp);
-        //selection_sort((void *)lineptr, nlines, (int (*)(const void  *, const void *))string_comp);
-        heap_sort((void *)lineptr, nlines, (int (*)(const void *, const void *))string_comp);
+        //insertion_sort((void **)lineptr, nlines, (int (*)(const void *, const void *))string_comp);
+        //selection_sort((void **)lineptr, nlines, (int (*)(const void  *, const void *))string_comp);
+        //heap_sort((void **)lineptr, nlines, (int (*)(const void *, const void *))string_comp);
+        counting_sort((void **)lineptr, nlines);
         writelines(lineptr, nlines);
         return 0;
     } else {
