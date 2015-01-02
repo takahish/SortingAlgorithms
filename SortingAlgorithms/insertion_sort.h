@@ -5,6 +5,8 @@
 //  Created by Takahiro on 2014/12/27.
 //  Copyright (c) 2014 Takahiro Ishikawa. All rights reserved.
 //
+//  Reference "Algorithms in a Nutshell", George T. Heineman, Gary Pollice, and Stanley Selkow.
+//
 
 #ifndef __SortingAlgorithms__insertion_sort__
 #define __SortingAlgorithms__insertion_sort__

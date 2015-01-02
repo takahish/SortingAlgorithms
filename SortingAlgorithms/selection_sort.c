@@ -3,7 +3,9 @@
 //  SortingAlgorithms
 //
 //  Created by Takahiro on 2014/12/28.
-//  Copyright (c) 2014 Takahiro ishikawa. All rights reserved.
+//  Copyright (c) 2014 Takahiro Ishikawa. All rights reserved.
+//
+//  Reference "Algorithms in a Nutshell", George T. Heineman, Gary Pollice, and Stanley Selkow.
 //
 
 #include "selection_sort.h"

@@ -5,6 +5,8 @@
 //  Created by Takahiro on 2014/12/24.
 //  Copyright (c) 2014 Takahiro Ishikawa. All rights reserved.
 //
+//  Reference "C Programming Language (2nd Edition)", Brian Kernighan and Dennis Ritchie.
+//
 
 #ifndef __SortingAlgorithms__alloc__
 #define __SortingAlgorithms__alloc__
