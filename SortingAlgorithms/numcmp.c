@@ -8,19 +8,10 @@
 //  Reference "C Programming Language (2nd Edition)", Brian Kernighan and Dennis Ritchie.
 //
 
-#include "comp.h"
+#include "numcmp.h"
 
-/* string_comp: return <0 if s<t, 0 if s==t, >0 if s>t */
-int string_comp(char *s1, char *s2)
-{
-    for ( ; *s1 == *s2; s1++, s2++)
-        if (*s1 == '\0')
-            return 0;
-    return *s1 - *s2;
-}
-
-/* number_comp: compare s1 and s2 numerically */
-int number_comp(char *s1, char *s2)
+/* numcmp: compare s1 and s2 numerically */
+int numcmp(char *s1, char *s2)
 {
     double v1, v2;
 

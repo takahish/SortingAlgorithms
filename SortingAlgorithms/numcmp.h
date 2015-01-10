@@ -13,7 +13,6 @@
 
 #include <stdlib.h>
 
-int string_comp(char *s1, char *s2);
-int number_comp(char *s1, char *s2);
+int numcmp(char *s1, char *s2);
 
 #endif /* defined(__SortingAlgorithms__str__) */

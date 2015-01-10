@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6F2C9B921A4E35AD00A384A4 /* insertion_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C9B901A4E35AD00A384A4 /* insertion_sort.c */; };
-		6F2C9B951A4E360100A384A4 /* comp.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C9B931A4E360100A384A4 /* comp.c */; };
+		6F2C9B951A4E360100A384A4 /* numcmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C9B931A4E360100A384A4 /* numcmp.c */; };
 		6F2C9B9B1A4F82D500A384A4 /* selection_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C9B991A4F82D500A384A4 /* selection_sort.c */; };
 		6F2C9B9E1A511B0D00A384A4 /* swap.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C9B9C1A511B0D00A384A4 /* swap.c */; };
 		6F2C9BA11A52184E00A384A4 /* heap_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C9B9F1A52184E00A384A4 /* heap_sort.c */; };
-		6F2C9BA41A521C7300A384A4 /* copy.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C9BA21A521C7300A384A4 /* copy.c */; };
 		6F2C9BA71A5272BB00A384A4 /* counting_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C9BA51A5272BB00A384A4 /* counting_sort.c */; };
 		6F4241591A4A46A40042B1BB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F4241581A4A46A40042B1BB /* main.c */; };
 		6F4241611A4A47C70042B1BB /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F42415F1A4A47C70042B1BB /* alloc.c */; };
@@ -35,16 +34,14 @@
 /* Begin PBXFileReference section */
 		6F2C9B901A4E35AD00A384A4 /* insertion_sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = insertion_sort.c; sourceTree = "<group>"; };
 		6F2C9B911A4E35AD00A384A4 /* insertion_sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = insertion_sort.h; sourceTree = "<group>"; };
-		6F2C9B931A4E360100A384A4 /* comp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = comp.c; sourceTree = "<group>"; };
-		6F2C9B941A4E360100A384A4 /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		6F2C9B931A4E360100A384A4 /* numcmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = numcmp.c; sourceTree = "<group>"; };
+		6F2C9B941A4E360100A384A4 /* numcmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = numcmp.h; sourceTree = "<group>"; };
 		6F2C9B991A4F82D500A384A4 /* selection_sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = selection_sort.c; sourceTree = "<group>"; };
 		6F2C9B9A1A4F82D500A384A4 /* selection_sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = selection_sort.h; sourceTree = "<group>"; };
 		6F2C9B9C1A511B0D00A384A4 /* swap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swap.c; sourceTree = "<group>"; };
 		6F2C9B9D1A511B0D00A384A4 /* swap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swap.h; sourceTree = "<group>"; };
 		6F2C9B9F1A52184E00A384A4 /* heap_sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = heap_sort.c; sourceTree = "<group>"; };
 		6F2C9BA01A52184E00A384A4 /* heap_sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heap_sort.h; sourceTree = "<group>"; };
-		6F2C9BA21A521C7300A384A4 /* copy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = copy.c; sourceTree = "<group>"; };
-		6F2C9BA31A521C7300A384A4 /* copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = copy.h; sourceTree = "<group>"; };
 		6F2C9BA51A5272BB00A384A4 /* counting_sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = counting_sort.c; sourceTree = "<group>"; };
 		6F2C9BA61A5272BB00A384A4 /* counting_sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = counting_sort.h; sourceTree = "<group>"; };
 		6F4241551A4A46A40042B1BB /* SortingAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SortingAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,16 +89,14 @@
 				6F4241601A4A47C70042B1BB /* alloc.h */,
 				6F2C9B901A4E35AD00A384A4 /* insertion_sort.c */,
 				6F2C9B911A4E35AD00A384A4 /* insertion_sort.h */,
-				6F2C9B931A4E360100A384A4 /* comp.c */,
-				6F2C9B941A4E360100A384A4 /* comp.h */,
+				6F2C9B931A4E360100A384A4 /* numcmp.c */,
+				6F2C9B941A4E360100A384A4 /* numcmp.h */,
 				6F2C9B991A4F82D500A384A4 /* selection_sort.c */,
 				6F2C9B9A1A4F82D500A384A4 /* selection_sort.h */,
 				6F2C9B9C1A511B0D00A384A4 /* swap.c */,
 				6F2C9B9D1A511B0D00A384A4 /* swap.h */,
 				6F2C9B9F1A52184E00A384A4 /* heap_sort.c */,
 				6F2C9BA01A52184E00A384A4 /* heap_sort.h */,
-				6F2C9BA21A521C7300A384A4 /* copy.c */,
-				6F2C9BA31A521C7300A384A4 /* copy.h */,
 				6F2C9BA51A5272BB00A384A4 /* counting_sort.c */,
 				6F2C9BA61A5272BB00A384A4 /* counting_sort.h */,
 				6FA595F11A53DCB7002B550B /* itoa.c */,
@@ -170,9 +165,8 @@
 			files = (
 				6FA595F31A53DCB7002B550B /* itoa.c in Sources */,
 				6F2C9B9E1A511B0D00A384A4 /* swap.c in Sources */,
-				6F2C9B951A4E360100A384A4 /* comp.c in Sources */,
+				6F2C9B951A4E360100A384A4 /* numcmp.c in Sources */,
 				6FA595F61A54C898002B550B /* bucket_sort.c in Sources */,
-				6F2C9BA41A521C7300A384A4 /* copy.c in Sources */,
 				6F4241591A4A46A40042B1BB /* main.c in Sources */,
 				6F2C9B9B1A4F82D500A384A4 /* selection_sort.c in Sources */,
 				6F2C9BA11A52184E00A384A4 /* heap_sort.c in Sources */,

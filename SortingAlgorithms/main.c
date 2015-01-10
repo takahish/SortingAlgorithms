@@ -11,10 +11,9 @@
 //
 
 #include <stdio.h>
-
+#include <string.h>
 #include "alloc.h"
-#include "comp.h"
-#include "copy.h"
+#include "numcmp.h"
 #include "insertion_sort.h"
 #include "selection_sort.h"
 #include "heap_sort.h"
@@ -36,11 +35,11 @@ int main(int argc, const char * argv[])
     int nlines; /* number of input lines read */
 
     if ((nlines = readlines(lineptr, MAXLINES)) >= 0) {
-        //insertion_sort((void **)lineptr, nlines, (int (*)(const void *, const void *))string_comp);
-        //selection_sort((void **)lineptr, nlines, (int (*)(const void  *, const void *))string_comp);
-        //heap_sort((void **)lineptr, nlines, (int (*)(const void *, const void *))string_comp);
+        insertion_sort((void **)lineptr, nlines, (int (*)(const void *, const void *))strcmp);
+        //selection_sort((void **)lineptr, nlines, (int (*)(const void  *, const void *))strcmp);
+        //heap_sort((void **)lineptr, nlines, (int (*)(const void *, const void *))strcmp);
         //counting_sort((void **)lineptr, nlines);
-        bucket_sort((void **)lineptr, nlines, (int (*)(const void *, const void *))number_comp);
+        //bucket_sort((void **)lineptr, nlines, (int (*)(const void *, const void *))numcmp);
         writelines(lineptr, nlines);
         return 0;
     } else {
@@ -61,7 +60,7 @@ int readlines(char **lineptr, int maxlines)
             return -1;
         else {
             line[len-1] = '\0'; /* delete newline */
-            copy(p, line);
+            strcpy(p, line);
             lineptr[nlines++] = p;
         }
     return nlines;
